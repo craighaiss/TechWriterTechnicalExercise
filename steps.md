@@ -27,10 +27,10 @@ Before editing the project files, follow these steps to create a branch in git. 
 ## Incorporate HTML changes
 
 ### Optimize and prefetch the jellyfish image
-Follow the steps below to optimize jellyfish.jpg, save it as a .png image, and then prefetch the image for faster loading.
+Follow the steps below to optimize jellyfish.jpg and then prefetch the image for faster loading.
 
 1. In your browser, navigate to https://squoosh.app/.
-2. Open the Plus sign and browse to the jellyfish.jpg file in your project's /Resources/ folder. Squoosh will show a comparison of the original image and the compressed version. In this case, it shows a 70 percent reduction in file size, from 78.5kb to 23.8kb.
+2. Click the Plus sign and browse to the jellyfish.jpg file in your project's /Resources/ folder. Squoosh will show a comparison of the original image and the compressed version. In this case, it shows a 70 percent reduction in file size, from 78.5kb to 23.8kb.
 3. Click the Download button in the lower right corner of the screen. The compressed file is saved in your Downloads folder.
 4. Copy the compressed jellyfish.jpg from your Downloads folder and paste it into the project's /Resources/ folder, overwriting the original image.
 5. In VS Code, open index.html.
@@ -38,7 +38,7 @@ Follow the steps below to optimize jellyfish.jpg, save it as a .png image, and t
     ```html
     <link rel="prefetch" href="./Resources/jellyfish.jpg" />
     ```
-7. Change the file extension of the image reference from `.png` to `.jpg`. Using JPG results in a much smaller image file and will improve page performance without a loss in image quality.
+7. Farther down in the file, change the file extension of the IMG source from `.png` to `.jpg`. The JPG format results in a much smaller image file and will improve page performance without a loss in image quality.
 8. Save index.html and open it in a browser to verify the image appears.
 
 ### Incorporate additional HTML changes
